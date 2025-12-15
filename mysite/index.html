@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome to my website </title>
+    <style>
+        /* CSS to define the robot's appearance and page layout */
+        body {
+            display: flex;
+            flex-direction: column; /* Stacks items vertically: Title, Subtitle, then Robot */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Styling for the Title */
+        h1 {
+            color: #333; /* Dark text color */
+            margin-bottom: 5px; /* Space below the title */
+        }
+
+        /* Styling for the Subtitle */
+        h2 {
+            color: #007bff; /* A nice blue for emphasis */
+            margin-top: 0; /* No extra space above the subtitle */
+            margin-bottom: 30px; /* Space before the robot drawing */
+            font-weight: normal; /* Makes it slightly lighter than the main title */
+        }
+
+        /* The main head of the robot */
+        .robot-head {
+            width: 200px;
+            height: 150px;
+            background-color: #333; /* Dark gray */
+            border: 10px solid #555;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        /* The robot's antenna */
+        .antenna {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 30px;
+            background-color: #555;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .antenna::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -5px;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        /* The eyes */
+        .eye {
+            width: 30px;
+            height: 30px;
+            background-color: yellowgreen;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+        }
+
+        /* Positioning the left eye */
+        .left-eye {
+            left: 30px;
+        }
+
+        /* Positioning the right eye */
+        .right-eye {
+            right: 30px;
+        }
+
+        /* The mouth */
+        .mouth {
+            width: 100px;
+            height: 10px;
+            background-color: #777;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>? By Nishkarsh ?</h1>
+    
+    <h2>A  geometric figure  drawn fully with HTML and CSS</h2>
+
+    <div class="robot-head">
+        <div class="antenna"></div>
+        <div class="eye left-eye"></div>
+        <div class="eye right-eye"></div>
+        <div class="mouth"></div>
+    </div>
+
+</body>
+</html>
